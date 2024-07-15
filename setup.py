@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='cnspy_rosbag2image',
-    version="0.1.1",
+    version="0.1.2",
     author='Roland Jung',
     author_email='roland.jung@aau.at',    
     description='ROS1 rosbag to image file converter.',
@@ -32,4 +32,9 @@ setup(
     packages=find_packages(exclude=["test_*", "TODO*"]),
     python_requires='>=3.6',
     install_requires=['numpy', 'tqdm', 'pandas', 'argparse', 'PyYAML', 'rospkg', 'opencv-python', 'pycryptodomex', 'pycryptodome', 'gnupg', 'lz4'],
+    entry_points={
+        'console_scripts': [
+            'ROSbag2Image = cnspy_rosbag2image.ROSbag2Image:main',
+        ],
+    },
 )

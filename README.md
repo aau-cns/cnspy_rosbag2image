@@ -28,6 +28,9 @@ Main dependencies are:
 * [Christian Brommer](https://github.com/Chris-Bee)
 * [Thomas Jantos](https://www.aau.at/team/jantos-thomas-georg/)
 
+## Run from terminal
+
+* ROSbag2Image 
 
 
 ## License
